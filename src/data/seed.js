@@ -90,7 +90,10 @@ My skill set spans both frontend and backend development, allowing me to take pr
     {
       title: 'Core Skills',
       body: '',
-      image: '/skill.png'
+      image: '/skill.png',
+        images: [
+    { src: '/skill.png', alt: 'Overview', caption: 'Skill Overview' }
+          ]
     }
   ],
 
@@ -111,6 +114,7 @@ My skill set spans both frontend and backend development, allowing me to take pr
 // ]
 
 // <GalleryImageGroup images={imgs} thumbClassName="frame-image" />
+
 
 
 
