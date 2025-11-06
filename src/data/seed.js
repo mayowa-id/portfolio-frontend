@@ -31,18 +31,8 @@ My skill set spans both frontend and backend development, allowing me to take pr
 
   // certifications: `- AWS Certified Solutions Architect (2024)\n- Oracle Certified Professional, Java SE 11 Developer`,
 
-  projects: [
-    {
-  title: 'The Office - Dunder Mifflin Paper Co. ',
-  description: `A landing page dedicated to my favorite sitcom`,
-   github: 'https://github.com/mayowa-id/dunder-mifflin-landing-page',
-    liveDemo: "https://dunder-mifflin-landing-page.vercel.app/",
-  images: [
-    { src: '/dmf1.png', alt: 'Overview', caption: 'Dashboard' },
-     { src: '/dmf2.png', alt: 'Overview', caption: 'Dashboard' },
-     { src: '/dmf3.png', alt: 'Overview', caption: 'Dashboard' }
-  ]
-},
+  projects: [  
+
 {
   title: 'Inventory Management System',
   description: `A full-stack inventory management system that automates product restocking and warehouse capacity management for businesses. The application monitors stock levels across multiple warehouses and automatically generates purchase orders when inventory falls below defined thresholds, while respecting warehouse capacity constraints.`,
@@ -55,8 +45,33 @@ My skill set spans both frontend and backend development, allowing me to take pr
     { src: '/inv4.png', alt: 'Diagram', caption: 'Dashboard' },
    { src: '/inv5.png', alt: 'Overview', caption: 'Dashboard' }
   ]
-}
-    ,
+},
+
+    {
+  title: 'graph bank fin-api',
+  description: `A simple Spring Boot API demonstrating inheritance in Java for modeling financial instruments 
+  (e.g., Asset → Bond, Stock). Highlights OOP principles like polymorphism, Liskov Substitution, 
+  and Template Method in a fintech context`,
+   github: ' https://github.com/mayowa-id/fin-api',
+  images: [
+    { src: '/fin1.png', alt: 'Overview', caption: 'Code' },
+     { src: '/fin2.png', alt: 'Overview', caption: 'Local Client' },
+     { src: '/fin3.png', alt: 'Overview', caption: 'Terminal' },
+    { src: '/fin4.png', alt: 'Overview', caption: 'Code' }
+  ]
+},
+      {
+  title: 'The Office - Dunder Mifflin Paper Co. ',
+  description: `A landing page dedicated to my favorite sitcom`,
+   github: 'https://github.com/mayowa-id/dunder-mifflin-landing-page',
+    liveDemo: "https://dunder-mifflin-landing-page.vercel.app/",
+  images: [
+    { src: '/dmf1.png', alt: 'Overview', caption: 'Dashboard' },
+     { src: '/dmf2.png', alt: 'Overview', caption: 'Dashboard' },
+     { src: '/dmf3.png', alt: 'Overview', caption: 'Dashboard' }
+  ]
+},
+    
     {
       title: 'Auth Service',
       description: 'Authentication & Authorization service with JWT, OAuth2 logins, and MongoDB integration.',
@@ -96,6 +111,7 @@ My skill set spans both frontend and backend development, allowing me to take pr
 // ]
 
 // <GalleryImageGroup images={imgs} thumbClassName="frame-image" />
+
 
 
 
