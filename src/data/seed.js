@@ -73,7 +73,29 @@ My skill set spans both frontend and backend development, allowing me to take pr
 },
      {
   title: 'Idempodency in Financial Systems - bank api demo',
-  description: `A clean, lightweight, production-grade Spring Boot demo that shows how to safely handle retries in payment systems using idempotency`,
+  description: `A clean, lightweight, production-grade Spring Boot demo that shows how to safely handle retries in payment systems using idempotency
+  Scenario  
+
+Imagine a  user initiates a N10,000 transfer to pay for Malt.  
+
+Their app times out. They tap "Retry".  
+
+Without proper safeguards, the system processes the same payment twice.  
+
+Result: double charge, angry customer, compliance issues.
+
+
+
+This demo demonstrates the solution using a minimal, production-grade Spring Boot API that shows exactly how to prevent this.
+
+
+
+How it works  
+
+ When user uses the client to send POST /api/payments req with an Idempotency-Key header , 
+ the first request is processed and cached in Redis  so when user retries with same key,
+ api returns identical response, no re-processing.
+  `,
    github: 'https://github.com/mayowa-id/graphbank-api-demo',
   images: [
     { src: '/idemp1.png', alt: 'Overview', caption: 'Code' },
@@ -124,6 +146,7 @@ My skill set spans both frontend and backend development, allowing me to take pr
 // ]
 
 // <GalleryImageGroup images={imgs} thumbClassName="frame-image" />
+
 
 
 
