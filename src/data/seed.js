@@ -71,7 +71,17 @@ My skill set spans both frontend and backend development, allowing me to take pr
      { src: '/dmf3.png', alt: 'Overview', caption: 'Dashboard' }
   ]
 },
-    
+     {
+  title: 'Idempodency in Financial Systems - bank api demo',
+  description: `A clean, lightweight, production-grade Spring Boot demo that shows how to safely handle retries in payment systems using idempotency`,
+   github: 'https://github.com/mayowa-id/graphbank-api-demo',
+  images: [
+    { src: '/idemp1.png', alt: 'Overview', caption: 'Code' },
+     { src: '/idemp2.png', alt: 'Overview', caption: 'Postman' },
+     { src: '/idemp3.png', alt: 'Overview', caption: 'Terminal' }
+  ]
+}
+    ,
     {
       title: 'Auth Service',
       description: 'Authentication & Authorization service with JWT, OAuth2 logins, and MongoDB integration.',
@@ -114,6 +124,7 @@ My skill set spans both frontend and backend development, allowing me to take pr
 // ]
 
 // <GalleryImageGroup images={imgs} thumbClassName="frame-image" />
+
 
 
 
