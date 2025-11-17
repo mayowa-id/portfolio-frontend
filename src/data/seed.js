@@ -71,6 +71,16 @@ My skill set spans both frontend and backend development, allowing me to take pr
      { src: '/dmf3.png', alt: 'Overview', caption: 'Dashboard' }
   ]
 },
+{
+  title: 'Flex Delivery Marketplace',
+  description: `Landing page demo for a delivery service`,
+   github: 'https://github.com/mayowa-id/flexdelivery',
+    liveDemo: "https://flexdelivery.vercel.app/",
+  images: [
+    { src: '/flex.png', alt: 'Overview', caption: 'Marketplace & Package details' }
+  ]
+}
+,
      {
   title: 'Idempodency in Financial Systems - bank api demo',
   description: `A clean, lightweight, production-grade Spring Boot demo that shows how to safely handle retries in payment systems using idempotency
