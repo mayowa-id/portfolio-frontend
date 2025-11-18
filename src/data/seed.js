@@ -33,6 +33,17 @@ My skill set spans both frontend and backend development, allowing me to take pr
 
   projects: [  
 
+
+{
+  title: 'Payment Processing API Tester',
+  description: `A full-stack inventory management system that automates product restocking and warehouse capacity management for businesses. The application monitors stock levels across multiple warehouses and automatically generates purchase orders when inventory falls below defined thresholds, while respecting warehouse capacity constraints.`,
+   github: 'https://github.com/mayowa-id/payment-instructions-api-tester',
+    liveDemo: "https://payment-instructions-api-tester-c52.vercel.app/",
+  images: [
+    { src: '/tester1.png', alt: 'Overview', caption: 'Overview' },
+     { src: '/tester2.png', alt: 'Overview', caption: 'Overview' }
+  ]
+},
 {
   title: 'Inventory Management System',
   description: `A full-stack inventory management system that automates product restocking and warehouse capacity management for businesses. The application monitors stock levels across multiple warehouses and automatically generates purchase orders when inventory falls below defined thresholds, while respecting warehouse capacity constraints.`,
@@ -46,7 +57,6 @@ My skill set spans both frontend and backend development, allowing me to take pr
    { src: '/inv5.png', alt: 'Overview', caption: 'Dashboard' }
   ]
 },
-
     {
   title: 'graph bank fin-api',
   description: `A simple Spring Boot API demonstrating inheritance in Java for modeling financial instruments 
@@ -85,23 +95,15 @@ My skill set spans both frontend and backend development, allowing me to take pr
   title: 'Idempodency in Financial Systems - bank api demo',
   description: `A clean, lightweight, production-grade Spring Boot demo that shows how to safely handle retries in payment systems using idempotency
   Scenario  
-
 Imagine a  user initiates a N10,000 transfer to pay for Malt.  
-
 Their app times out. They tap "Retry".  
-
 Without proper safeguards, the system processes the same payment twice.  
 
 Result: double charge, angry customer, compliance issues.
 
-
-
 This demo demonstrates the solution using a minimal, production-grade Spring Boot API that shows exactly how to prevent this.
 
-
-
 How it works  
-
  When user uses the client to send POST /api/payments req with an Idempotency-Key header , 
  the first request is processed and cached in Redis  so when user retries with same key,
  api returns identical response, no re-processing.
