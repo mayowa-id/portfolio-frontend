@@ -36,7 +36,8 @@ My skill set spans both frontend and backend development, allowing me to take pr
 
 {
   title: 'Payment Processing API Tester',
-  description: `A full-stack inventory management system that automates product restocking and warehouse capacity management for businesses. The application monitors stock levels across multiple warehouses and automatically generates purchase orders when inventory falls below defined thresholds, while respecting warehouse capacity constraints.`,
+  description: `For a backend dev job application, I was asked to build a RESTful API that processes natural language payment instructions (e.g., "DEBIT 500 USD FROM ACCOUNT A FOR CREDIT TO ACCOUNT B"), validates business rules like currency matching and sufficient funds, and executes or schedules transactions accordingly. And then I decided to build a frontend to test the endpoints easily, touch and go. 
+This interactive frontend testing interface demonstrates the API's functionality through 12 test cases covering both valid and invalid scenarios. Users can run tests individually or as a batch. The interface provides real-time visual feedback, making it easy to verify correct handling of edge cases and validation errors.`,
    github: 'https://github.com/mayowa-id/payment-instructions-api-tester',
     liveDemo: "https://payment-instructions-api-tester-c52.vercel.app/",
   images: [
