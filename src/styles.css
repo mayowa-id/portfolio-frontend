@@ -149,7 +149,7 @@ body{
 .theme-toggle .tm:hover{background:rgba(255,255,255,0.02)}
 .theme-toggle .tm.active{background:rgba(255,255,255,0.03);color:var(--accent)}
 
-.tabs{margin-top:14px;display:flex;gap:10px;flex-wrap:wrap}
+.tabs{margin-top:0px;display:flex;gap:5px;flex-wrap:wrap}
 .tab{
   background:transparent;
   border:1px solid rgba(255,255,255,0.06);
@@ -164,8 +164,8 @@ body{
 .terminal-grid{
   display:grid;
   grid-template-columns:1fr 380px;
-  gap:18px;
-  margin-top:14px;
+  /* gap:18px;
+  margin-top:14px; */
   flex:1;
   min-height:0; /* important for preventing child overflow to root */
 }
@@ -173,12 +173,12 @@ body{
 /* left/right columns */
 .left{
   background:transparent;
-  padding:6px;
+  /* padding:6px; */
   border-radius:6px;
   color:var(--accent);
   overflow:auto;        /* allow internal scroll inside left column */
   min-height:0;
-  max-height: calc(100vh - 260px);
+  max-height: calc(100vh - 200px);
   -ms-scroll-snap-y: none; /* hide scrollbar in WebKit */
 }
 .right{
@@ -285,8 +285,8 @@ body{
   display:flex;
   justify-content:space-between;
   align-items:center;
-  margin-top:6px;
-  padding:8px 12px;
+  /* margin-top:6px; */
+  /* padding:8px 12px; */
   border-top:1px solid rgba(255,255,255,0.04);
   color:var(--muted);
   font-size:9px;
