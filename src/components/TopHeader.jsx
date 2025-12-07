@@ -24,8 +24,7 @@ export default function TopHeader({ profile = {} , theme = 'night' }){
 
       <div className="header-right">
         <div className="theme-toggle" role="tablist" aria-label="Theme selector">
-          <button className="tm" title="Night theme" onClick={() => changeTheme('night')}>Night</button>
-          <button className="tm" title="Dark theme" onClick={() => changeTheme('dark')}>Dark</button>
+          <button className="tm" title="Dark theme" onClick={() => changeTheme('night')}>Dark</button>
           <button className="tm" title="Light theme" onClick={() => changeTheme('light')}>Light</button>
         </div>
       </div>
