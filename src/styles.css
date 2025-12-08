@@ -1030,20 +1030,28 @@ code{background:rgba(255,255,255,0.02);padding:2px 6px;border-radius:4px;color:v
 
 /* tweak to keep spacing with frame-image below */
 .frame-image-wrap { margin-top: 14px; }
-
 .theme-toggle {
   background: transparent;
-  border: none;
-  font-size: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
   cursor: pointer;
   padding: 8px;
-  transition: transform 0.2s ease;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  color: inherit;
 }
 
 .theme-toggle:hover {
-  transform: scale(1.1);
+  border-color: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.05);
 }
 
 .theme-toggle:active {
   transform: scale(0.95);
+}
+
+.theme-toggle svg {
+  display: block;
 }
