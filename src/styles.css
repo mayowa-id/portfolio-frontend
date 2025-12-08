@@ -1031,56 +1031,19 @@ code{background:rgba(255,255,255,0.02);padding:2px 6px;border-radius:4px;color:v
 /* tweak to keep spacing with frame-image below */
 .frame-image-wrap { margin-top: 14px; }
 
-
-.theme-toggle-cli {
+.theme-toggle {
   background: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  color: #00ff00;
-  font-family: 'Monaco', 'Courier New', monospace;
-  font-size: 14px;
-  padding: 8px 16px;
+  border: none;
+  font-size: 20px;
   cursor: pointer;
-  transition: all 0.2s ease;
-  border-radius: 4px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
+  padding: 8px;
+  transition: transform 0.2s ease;
 }
 
-.theme-toggle-cli:hover {
-  border-color: #00ff00;
-  background: rgba(0, 255, 0, 0.05);
-  box-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
+.theme-toggle:hover {
+  transform: scale(1.1);
 }
 
-.theme-toggle-cli:active {
-  transform: translateY(1px);
+.theme-toggle:active {
+  transform: scale(0.95);
 }
-
-.theme-toggle-cli .prompt {
-  color: #00ff00;
-  font-weight: bold;
-}
-
-/* Light theme adjustments */
-body.light .theme-toggle-cli {
-  color: #333;
-  border-color: rgba(0, 0, 0, 0.2);
-}
-
-body.light .theme-toggle-cli:hover {
-  border-color: #333;
-  background: rgba(0, 0, 0, 0.05);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-body.light .theme-toggle-cli .prompt {
-  color: #666;
-}
-
-
-
-
-
-
-

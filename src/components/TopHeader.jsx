@@ -36,12 +36,12 @@ export default function TopHeader({ profile = {} , theme = 'night' }){
 
       <div className="header-right">
         <button 
-          className="theme-toggle-cli" 
+          className="theme-toggle" 
           onClick={toggleTheme}
           aria-label={`Switch to ${currentTheme === 'night' ? 'light' : 'dark'} mode`}
           title={`Switch to ${currentTheme === 'night' ? 'light' : 'dark'} mode`}
         >
-          <span className="prompt">$</span> theme --set {currentTheme === 'night' ? 'light' : 'dark'}
+          {currentTheme === 'night' ? '☀️' : '🌙'}
         </button>
       </div>
     </header>
