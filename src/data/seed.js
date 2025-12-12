@@ -56,7 +56,25 @@ How it works
      { src: '/idemp3.png', alt: 'Overview', caption: 'Terminal' }
   ]
 }
-    ,
+    ,{
+  title: 'Live Stock Tracker',
+  description: `This project is a lightweight, real-time stock price tracking application built to demonstrate edge-optimized backend development with Hono. The backend is a fast, serverless API that fetches and processes stock data from Yahoo Finance, delivering low-latency responses for global users.Backend Highlights (Hono-Powered)Architecture: Hono, a ultra-fast web framework, handles routing, middleware, and WebSockets with minimal overhead. It's runtime-agnostic, running seamlessly on Node.js, Bun, Deno, or edge platforms like Vercel or Cloudflare Workers for sub-10ms cold starts.
+E
+ndpoints:/quotes/:symbol: Retrieves latest bid/ask prices (mapped to StockQuote type).
+/historical/:symbol: Fetches OHLC bars for custom ranges (e.g., 30 days daily), formatted as AggregatesResponse for easy charting.
+/analytics/:symbol: Computes 50-day SMA from historical closes, with validation via Zod.
+/ws/:symbol: Real-time updates via WebSocket proxy (broadcasts trades as quotes).
+
+Data Handling: Uses yahoo-finance2 library for free, keyless API calls. TypeScript for type safety, with debug logging and error handling. No external dependencies for WS—native implementation with symbol subscription management.
+Strengths: Plays to Hono's edge capabilities—lightweight bundle (<200KB), fast routing, and easy deployment. Handles CRUD-like operations with middleware for CORS and validation, ideal for serverless scales.
+`,
+   github: 'https://github.com/mayowa-id/stock-tracker',
+    liveDemo: "https://stock-tracker-gk0owfzej-mayowas-projects-7b3044f1.vercel.app/",
+  images: [
+    { src: '/stock1.png', alt: 'Overview', caption: 'Overview' },
+     { src: '/stock2.png', alt: 'Overview', caption: 'Overview' }
+  ]
+},
 
 {
   title: 'Payment Processing API Tester',
