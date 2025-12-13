@@ -1,7 +1,8 @@
-// src/components/ProjectSection.jsx
 import React from 'react'
 import ArticleView from './ArticleView'
 import { ClickableImage, GalleryImageGroup } from './ClickableImage'
+import { FaGithub } from 'react-icons/fa';
+import { FiExternalLink } from 'react-icons/fi';
 
 export default function ProjectSection({
   title = '',
@@ -35,7 +36,7 @@ export default function ProjectSection({
               className="btn btn-outline btn-live"
               title="Open live demo (opens in new tab)"
             >
-              <span className="btn-ico">🌐</span>
+<span className="btn-ico"><FiExternalLink /></span>
               <span className="btn-text">Live Demo</span>
             </a>
           )}
@@ -48,10 +49,14 @@ export default function ProjectSection({
               className="btn btn-solid btn-github"
               title="Open GitHub repository (opens in new tab)"
             >
-              <span className="btn-ico">💻</span>
+<span className="btn-ico"><FaGithub /></span>
               <span className="btn-text">View on GitHub</span>
             </a>
           )}
+
+
+
+
 
           {/* Example glass button for optional extra (uses liveDemo if provided) */}
           {/* You can show it conditionally or use it for a second demo link */}
