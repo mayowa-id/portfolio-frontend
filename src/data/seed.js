@@ -56,6 +56,20 @@ How it works
      { src: '/idemp3.png', alt: 'Overview', caption: 'Terminal' }
   ]
 }
+
+ ,{
+  title: 'Crypto Wallet Demo',
+  description: `Full-stack application built with NestJS and React, featuring secure wallet management, fund transfers, and transaction tracking. Backend implements database-level ACID transactions, idempotency protection, and comprehensive error handling. Frontend offers an intuitive dashboard with dark mode, copy-to-clipboard functionality, and responsive design. Deployed as serverless functions on Vercel with PostgreSQL database.
+Tech Stack: NestJS, React, TypeScript, Prisma, PostgreSQL, Tailwind CSS, Vercel`,
+   github: 'https://github.com/mayowa-id/nova-wallet',
+    liveDemo: "https://nova-wallet-pro.vercel.app/",
+  images: [
+    { src: '/nova1.png', alt: 'Overview', caption: 'Wallet dash' },
+     { src: '/nova2.png', alt: 'Overview', caption: 'Transactions' },
+      { src: '/stock1.png', alt: 'Overview', caption: 'Overview' }
+  ]
+}
+
     ,{
   title: 'Live Stock Tracker',
   description: `This project is a lightweight, real-time stock price tracking application built to demonstrate edge-optimized backend development with Hono. The backend is a fast, serverless API that fetches and processes stock data from Yahoo Finance, delivering low-latency responses for global users.Backend Highlights (Hono-Powered)Architecture: Hono, a ultra-fast web framework, handles routing, middleware, and WebSockets with minimal overhead. It's runtime-agnostic, running seamlessly on Node.js, Bun, Deno, or edge platforms like Vercel or Cloudflare Workers for sub-10ms cold starts.
