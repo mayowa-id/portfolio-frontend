@@ -66,7 +66,7 @@ Tech Stack: NestJS, React, TypeScript, Prisma, PostgreSQL, Tailwind CSS, Vercel`
   images: [
     { src: '/nova1.png', alt: 'Overview', caption: 'Wallet dash' },
      { src: '/nova2.png', alt: 'Overview', caption: 'Transactions' },
-      { src: '/stock1.png', alt: 'Overview', caption: 'Overview' }
+      { src: '/nova3.png', alt: 'Overview', caption: 'Overview' }
   ]
 }
 
