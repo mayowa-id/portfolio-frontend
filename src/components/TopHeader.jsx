@@ -1,9 +1,13 @@
 import React, { useEffect, useState } from 'react'
 
-export default function TopHeader({ profile = {} , theme = 'night' }){
+export default function TopHeader({ profile = {} , theme = 'night', onChangeTheme }){
   const name = profile.name || 'Your Name'
   const roles = profile.roles || ['SOFTWARE ENGINEER', 'BACKEND DEVELOPER', 'FRONTEND DEVELOPER']
   const [currentTheme, setCurrentTheme] = useState(theme)
+  const [animationEnabled, setAnimationEnabled] = useState(() => {
+    const saved = localStorage.getItem('animation')
+    return saved === null ? true : saved === 'true'
+  })
 
   useEffect(() => {
     const saved = localStorage.getItem('theme')
@@ -20,11 +24,20 @@ export default function TopHeader({ profile = {} , theme = 'night' }){
     document.documentElement.setAttribute('data-theme', t)
     localStorage.setItem('theme', t)
     setCurrentTheme(t)
+    if (onChangeTheme) onChangeTheme(t)
   }
 
   function toggleTheme() {
     const newTheme = currentTheme === 'night' ? 'light' : 'night'
     changeTheme(newTheme)
+  }
+
+  function toggleAnimation() {
+    const newState = !animationEnabled
+    setAnimationEnabled(newState)
+    localStorage.setItem('animation', newState)
+    // Dispatch custom event so ArticleView can listen
+    window.dispatchEvent(new CustomEvent('animationToggle', { detail: { enabled: newState } }))
   }
 
   return (
@@ -35,6 +48,28 @@ export default function TopHeader({ profile = {} , theme = 'night' }){
       </div>
 
       <div className="header-right">
+        <button 
+          className="theme-toggle" 
+          onClick={toggleAnimation}
+          aria-label={`Turn typewriter animation ${animationEnabled ? 'off' : 'on'}`}
+          title={`Turn typewriter animation ${animationEnabled ? 'off' : 'on'}`}
+        >
+          {animationEnabled ? (
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <rect x="2" y="6" width="20" height="12" rx="2"/>
+              <line x1="6" y1="10" x2="10" y2="10"/>
+              <line x1="6" y1="14" x2="14" y2="14"/>
+              <line x1="16" y1="10" x2="18" y2="10"/>
+            </svg>
+          ) : (
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <rect x="2" y="6" width="20" height="12" rx="2"/>
+              <line x1="6" y1="10" x2="18" y2="10"/>
+              <line x1="6" y1="14" x2="18" y2="14"/>
+            </svg>
+          )}
+        </button>
+        
         <button 
           className="theme-toggle" 
           onClick={toggleTheme}
