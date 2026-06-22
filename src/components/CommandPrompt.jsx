@@ -49,7 +49,7 @@ export default function CommandPrompt({ onCommand }) {
         ref={inputRef}
         className="command"
         value={value}
-        placeholder={"type 'help' to see available commands — try: show about | show projects | show skills"}
+        placeholder=">_"
         onChange={(e) => setValue(e.target.value)}
         onKeyDown={onKey}
         spellCheck={false}
@@ -59,5 +59,3 @@ export default function CommandPrompt({ onCommand }) {
     </div>
   )
 }
-
-

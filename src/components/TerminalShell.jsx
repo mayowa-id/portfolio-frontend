@@ -238,7 +238,7 @@ export default function TerminalShell(){
       </div>
 
       <CommandPrompt onCommand={handleCommand} />
-      <StatusBar />
+      <StatusBar section={section} />
 
       {showContact && <ModalContact onClose={()=> setShowContact(false)} />}
     </div>
