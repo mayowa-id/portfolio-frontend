@@ -7,6 +7,19 @@ export const SEED = {
 
   experience: [
     {
+      role: 'FULL STACK DEVELOPER',
+      company: 'TACTOLOGY GLOBAL',
+      period: '2026 JANUARY – 2026 MAY',
+      description: `Architected and developed a production-grade healthcare intranet backend in NestJS (TypeScript), delivering modular domain services covering medical asset management, process risk identification (PRI), DPIA compliance, certification tracking, quality registrations, and staff training/education workflows.
+Designed and implemented a multi-domain GraphQL API with fine-grained resolvers, input validation, and entity-level permission boundaries, ensuring consistent and secure data access across clinical and administrative modules.
+Led a zero-downtime database migration strategy using TypeORM, transitioning the PRI sub-entity model from a MedicalAsset-centric architecture to a Pri-centric hub, including phase-based SQL scripts for safe relational data migration.
+Implemented DPIA (Data Protection Impact Assessment) risk management logic with strict ownership enforcement, validating mutual exclusivity between Process and MedicalAsset ownership at the service layer using structured i18n error messaging.
+Integrated AWS S3 and @aws-sdk/lib-storage for multipart document uploads, pdf-lib and sharp for server-side PDF generation and image processing, and archiver for bulk export capabilities across certification and compliance workflows.
+Built role-based access control (RBAC) and JWT-based authentication flows integrated across all protected modules, ensuring appropriate access boundaries for clinical staff, administrators, and auditors.
+Collaborated on Bruno API collections to maintain synchronized, living documentation across all GraphQL and REST endpoints — covering Process, Quotation, DPIA, Quality Registration, Education, and Certification modules.
+Maintained high code quality through TypeScript strict mode compliance, layered service architecture, and structured error handling patterns, contributing to a maintainable and production-stable codebase.`
+    },
+    {
       role: 'FULL STACK DEVELOPER INTERN',
       company: 'TIPSONA, LAGOS',
       period: '2024',
@@ -21,17 +34,31 @@ export const SEED = {
     }
   ],
 
-  about: `I am a full-stack developer focused on building scalable, efficient, and user-driven systems. I enjoy designing clean backend architectures and pairing them with well-structured, responsive frontends. I am actively in search of the right problems to solve  problems that challenge infrastructure, experience, and performance at the same time.
+  about: `I write backend systems — the kind that handle real load, real data, and stay maintainable. I do frontend when the job calls for it.
 
-My skill set spans both frontend and backend development, allowing me to take products from idea to deployment:\n
-- Backend Development : Node.js, Nest.js,Express, GraphQL, RESTful APIs, Authentication & Authorization
-- Frontend Development : React, Next.js, TypeScript, Tailwind CSS
--Databases : MongoDB, PostgreSQL, MySQL, Firebase, Supabase
-- Languages : Java, JavaScript, TypeScript, Python, HTML, CSS`,
+- Backend : NestJS, Node.js, Express, GraphQL, REST
+- Frontend : React, Next.js, TypeScript, CSS
+- Databases : PostgreSQL, MongoDB, MySQL
+- Languages : TypeScript, JavaScript, Python, Java`,
 
   // certifications: `- AWS Certified Solutions Architect (2024)\n- Oracle Certified Professional, Java SE 11 Developer`,
 
   projects: [  
+    {
+      title: 'Telco',
+      description: `A telecom and SaaS billing management system built with Nestjs(Nodejs) and TypeOrm, designed to handle subscriber lifecycles, usage event tracking, rate plans and automated invoice generation`,
+      github: 'https://github.com/mayowa-id/telco',
+    },
+    {
+      title: 'Scribe',
+      description: `An AI-powered content generation and assistant backend built with Nestjs(Nodejs) and PostgreSWL integrating Anthropic and Google Generative AI to manage dynamic workflows for chapters, interviews and voice profiles.`,
+      github: 'https://github.com/mayowa-id/scribe',
+    },
+    {
+      title: 'Notiscope',
+      description: `Backend of a highly scalable, asynchronous notification service built with python (fastAPI), Celery, Redis and PostgreSWL, featuring reliable email delivery via AWS SES with built in idempotency, exponential backoff and a postmark fallback mechanism.`,
+      github: 'https://github.com/mayowa-id/notiscope',
+    },
  {
   title: 'Idempodency in Financial Systems - bank api demo',
   description: `A clean, lightweight, production-grade Spring Boot demo that shows how to safely handle retries in payment systems using idempotency
@@ -180,32 +207,6 @@ This interactive frontend testing interface demonstrates the API's functionality
     linkedin: "https://linkedin.com/in/yourusername"
   }
 }
-
-
-
-//for situations where i have multiple images and i want to show them as a slideshow 
-// const imgs = [
-//   { src: '/proj1-1.png', alt: 'proj1-1', caption: 'Diagram overview' },
-//   { src: '/proj1-2.png', alt: 'proj1-2', caption: 'Sequence diagram' },
-// ]
-
-// <GalleryImageGroup images={imgs} thumbClassName="frame-image" />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

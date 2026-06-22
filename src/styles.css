@@ -240,7 +240,7 @@ body{
   font-family:var(--mono);
   font-size:17px;
   line-height:1.4;
-  max-width: 60%; 
+  width: 100%; 
   caret-color:var(--accent);
   padding:6px 8px;
 }
@@ -277,7 +277,7 @@ body{
 }
 
 /* cmdline/prompt area */
-.cmdline{display:flex;align-items:center;gap:10px;margin-top:14px;max-width: 60%;}
+.cmdline{display:flex;align-items:center;gap:10px;margin-top:14px;width: 100%;}
 @keyframes promptBlink{0%{opacity:1}50%{opacity:0}100%{opacity:1}}
 
 /* statusbar below prompt */
@@ -285,12 +285,13 @@ body{
   display:flex;
   justify-content:space-between;
   align-items:center;
-  /* margin-top:6px; */
-  /* padding:8px 12px; */
-  border-top:1px solid rgba(255,255,255,0.04);
+  margin-top:12px;
+  padding:8px 12px;
+  border-top:1px solid rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.02);
+  border-radius: 4px;
   color:var(--muted);
-  font-size:9px;
-  background:transparent;
+  font-size:10px;
 }
 
 /* modal generic */
